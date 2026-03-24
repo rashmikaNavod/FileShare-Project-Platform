@@ -11,12 +11,14 @@ module.exports = {
             script: "java",
             args: "-jar ./service-registry/target/service-registry-1.0.0.jar",
             log_file: "./logs/service-registry.log",
+            restart_delay: 5000,
         },
         {
             name: "api-gateway",
             script: "java",
             args: "-jar ./api-gateway/target/api-gateway-1.0.0.jar",
             log_file: "./logs/api-gateway.log",
+            restart_delay: 5000,
         }
     ]
 }
